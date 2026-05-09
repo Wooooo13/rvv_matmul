@@ -1,0 +1,13 @@
+# code_id: s = scalar; b = basic; o = outer; t = tiling
+# config_type: se = SE; 0s = simple; 0o = o3; 1s = l1simple; 1o = l1o3; 2s = l2simple; 2o = l2o3
+# test_metric: c = system.cpu.numCycles; i = simInsts; ipc = system.cpu.ipc; simt = simSeconds; 
+
+code_id,config_type,matrix_size,test_metric,value
+s,se,128,c,21943471
+s,se,128,i,13226447 
+b,se,128,c,5448237
+b,se,128,i,3841794
+o,se,128,c,1503423
+o,se,128,i,1135654
+t,se,128,c,1886839
+t,se,128,i,1799940
